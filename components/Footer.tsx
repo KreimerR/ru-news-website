@@ -66,7 +66,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-4 py-4 border-t-black border-t">
-        <span>The Saint Petersburg Times, 2026 — 2026</span>
+        <span>The Saint-Petersburg Times, 2026 — 2026</span>
       </div>
     </div>
   )
