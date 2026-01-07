@@ -17,7 +17,7 @@ You can use this project in one of the following ways:
 
 ### Option 1: Use the Live Version
 
-Currently unavialable
+Simply open [this link](https://ru-news-website.vercel.app/) in your browser to access the application online
 
 ### Option 2: Run Locally
 
