@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import Script from "next/script";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -26,11 +24,9 @@ export default function RootLayout({
         <Script src="https://kit.fontawesome.com/3fffe4c1b5.js" crossOrigin="anonymous" />
       </head>
       <body
-        className={`${roboto.variable} md:mx-25 antialiased`}
+        className={`${roboto.variable} antialiased`}
       >
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

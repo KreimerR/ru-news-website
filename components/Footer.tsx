@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <div className="mx-3 py-10 border-t-black border-t-2">
+    <div className="px-3 md:px-0">
       <Link href="/">
         <h1 className="text-4xl lg:text-3xl w-full text-center lg:text-left font-bold">The Saint-Petersburg Times</h1>
       </Link>
@@ -13,7 +13,7 @@ export default function Footer() {
 
           <form className="flex flex-col items-start gap-2">
             <input type="email" placeholder="Адрес электронной почты" className="border-gray-300 border py-3 px-2 w-100" required />
-            <input type="submit" value="ПОДПИСАТЬСЯ" className="py-2 px-4 bg-blue-500 text-white font-bold hover:cursor-pointer" />
+            <input type="submit" value="ПОДПИСАТЬСЯ" className="py-2 px-4 bg-blue-900 text-white font-bold hover:cursor-pointer" />
 
             <div className="flex flex-col gap-4 mt-2">
               <label className="flex items-center gap-2 text-lg">
@@ -66,7 +66,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-4 py-4 border-t-black border-t">
-        <span>The Saint-Petersburg Times, 2026 — 2026</span>
+        <span>The Saint-Petersburg Times, 2026 — {new Date().getFullYear()}</span>
       </div>
     </div>
   )
