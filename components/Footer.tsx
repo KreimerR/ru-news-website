@@ -2,9 +2,9 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <div className="px-3 md:px-0">
+    <div className="pt-5 px-3 md:px-0">
       <Link href="/">
-        <h1 className="text-4xl lg:text-3xl w-full text-center lg:text-left font-bold">The Saint-Petersburg Times</h1>
+        <h1 className="text-3xl w-full text-center lg:text-left font-bold">The Saint-Petersburg Times</h1>
       </Link>
 
       <div className="mt-5 mb-20 flex flex-col gap-5 lg:flex-row lg:gap-0 lg:justify-between lg:items-top">
