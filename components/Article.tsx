@@ -27,7 +27,7 @@ export default function Article({
 }: Props) {
   return (
     <Link href={`/${enCategory(category)}/${id}`} className={image
-      ? "grid grid-cols-[1fr_2fr] px-4 md:px-0 md:flex md:flex-col items-center md:items-baseline gap-2 pb-5"
+      ? "grid grid-cols-[1fr_2fr] items-start px-4 md:px-0 md:flex md:flex-col md:items-center md:items-baseline gap-2 pb-5"
       : `flex md:flex-col items-center md:items-baseline gap-2 pb-5 ${!withoutBottomBorder && "border-gray-200 border-b last:border-none"}`
     }>
       {image && <Image src={image} alt="Image" className={big
