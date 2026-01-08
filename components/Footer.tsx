@@ -12,7 +12,7 @@ export default function Footer() {
           <span className="font-bold block mb-3">ПОДПИШИТЕСЬ НА НАШУ РАССЫЛКУ</span>
 
           <form className="flex flex-col items-start gap-2">
-            <input type="email" placeholder="Адрес электронной почты" className="border-gray-300 border py-3 px-2 w-100" required />
+            <input type="email" placeholder="Адрес электронной почты" className="border-gray-300 border py-3 px-2 w-full" required />
             <input type="submit" value="ПОДПИСАТЬСЯ" className="py-2 px-4 bg-blue-900 text-white font-bold hover:cursor-pointer" />
 
             <div className="flex flex-col gap-4 mt-2">
