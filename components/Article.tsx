@@ -27,8 +27,8 @@ export default function Article({
 }: Props) {
   return (
     <Link href={`/${enCategory(category)}/${id}`} className={image
-      ? "flex px-4 md:px-0 md:flex-col items-center md:items-baseline gap-2 pb-5"
-      : `flex md:flex-col items-center md:items-baseline gap-2 pb-5 ${withoutBottomBorder ? null : "border-gray-200 border-b last:border-none"}`
+      ? "grid grid-cols-[1fr_2fr] px-4 md:px-0 md:flex md:flex-col items-center md:items-baseline gap-2 pb-5"
+      : `flex md:flex-col items-center md:items-baseline gap-2 pb-5 ${!withoutBottomBorder && "border-gray-200 border-b last:border-none"}`
     }>
       {image && <Image src={image} alt="Image" className={big
         ? "lg:h-120 object-cover"
@@ -44,7 +44,7 @@ export default function Article({
         </div>
       )}
 
-      <h2 className={`w-100 md:w-full ${otherColor ? "text-white" : null} ${big ? "text-2xl leading-7" : "text-lg"} font-semibold leading-5`}>{title}</h2>
+      <h2 className={`md:w-full ${otherColor && "text-white"} ${big ? "text-2xl leading-7" : "text-lg"} font-semibold leading-5`}>{title}</h2>
     </Link>
   )
 }

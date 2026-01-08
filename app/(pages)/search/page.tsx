@@ -27,6 +27,11 @@ export default function Search() {
   function searchArticles() {
     const query = currentInputText.toLowerCase()
 
+    if (query.trim() === "") {
+      setFound(undefined)
+      return
+    }
+
     const results = articlesData.filter((article: TypeArticle) => {
       const titleMatch = article.title.toLowerCase().includes(query)
 
@@ -68,7 +73,10 @@ export default function Search() {
       {found !== undefined ? found ? (
         <div className="pb-5 md:px-25 [@media(min-width:1700px)]:px-70">
           <h2 className="px-5 md:px-0 font-bold py-10">НАЙДЕНЫ СТАТЬИ</h2>
-          {articles}
+
+          <div className="lg:grid lg:grid-cols-3 lg:gap-5">
+            {articles}
+          </div>
         </div>
       ) : (
         <h2 className="px-5 font-bold py-10 md:px-25 [@media(min-width:1700px)]:px-70">СТАТЬИ НЕ БЫЛИ НАЙДЕНЫ</h2>
