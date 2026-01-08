@@ -64,7 +64,7 @@ export default function Header() {
       </div>
 
       <div className="p-3 flex justify-between items-center md:hidden bg-yellow-300">
-        <span className="text-[0.8rem] font-medium">Поддержите The Saint-Petersburg Times</span>
+        <span className="text-[0.7rem] sm:text-[0.9rem] font-bold">Поддержите The Saint-Petersburg Times</span>
         <button className="py-2 px-5 bg-black text-white text-[0.7rem] font-bold hover:cursor-pointer">ПОДДЕРЖАТЬ</button>
       </div>
 
