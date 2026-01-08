@@ -19,12 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <head>
         <Script src="https://kit.fontawesome.com/3fffe4c1b5.js" crossOrigin="anonymous" />
       </head>
       <body
-        className={`${roboto.variable} antialiased`}
+        className={`${roboto.variable} antialiased overflow-x-hidden`}
       >
         {children}
       </body>
