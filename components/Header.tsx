@@ -18,7 +18,7 @@ export default function Header() {
         </Link>
 
         <div className="hidden md:flex md:flex-col md:justify-center md:items-end md:gap-1">
-          <span className="font-bold text-[0.8rem] lg:text-lg">Поддержите The Saint-Petersburg Times</span>
+          <span className="text-lg">Поддержите The Saint-Petersburg Times</span>
           <button className="p-2 bg-yellow-300 font-bold text-sm hover:cursor-pointer">ПОДДЕРЖАТЬ</button>
         </div>
 
@@ -64,7 +64,7 @@ export default function Header() {
       </div>
 
       <div className="p-3 flex justify-between items-center md:hidden bg-yellow-300">
-        <span>Поддержите The Saint-Petersburg Times</span>
+        <span className="text-[0.9rem] font-medium">Поддержите The Saint-Petersburg Times</span>
         <button className="py-2 px-5 bg-black text-white text-[0.7rem] font-bold hover:cursor-pointer">ПОДДЕРЖАТЬ</button>
       </div>
 
