@@ -51,18 +51,18 @@ export default async function FullArticle({ params }: Props) {
     </div>
   )
 
-  const content = article.content.map((element: any) => {
+  const content = article.content.map((element: any, index: number) => {
     if (element.type === "paragraph") {
       return (
-        <p className="text-lg">{element.content}</p>
+        <p key={index} className="text-lg">{element.content}</p>
       )
     } else if (element.type === "heading") {
       return (
-        <h2 className="text-2xl font-bold">{element.content}</h2>
+        <h2 key={index} className="text-2xl font-bold">{element.content}</h2>
       )
     } else if (element.type === "media") {
       return (
-        <Image src={element.content} alt="Image" className="w-full h-full object-cover" />
+        <Image key={index} src={element.content} alt="Image" className="w-full h-full object-cover" />
       )
     }
   })
