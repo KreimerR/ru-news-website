@@ -4,6 +4,8 @@ import type { TypeArticle } from "@/types"
 import { articlesData } from "@/data/articles"
 import { useState } from "react"
 import Article from "@/components/Article"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
 
 export default function Search() {
   const [currentInputText, setCurrentInputText] = useState<string>("")
@@ -64,7 +66,7 @@ export default function Search() {
           <div className="md:mt-5 py-10 px-5 md:bg-blue-900 w-full">
             <div className="bg-white w-full flex items-center">
               <input type="text" className="w-full p-2 outline-0" onChange={(e) => setCurrentInputText(e.currentTarget.value)} />
-              <i className="fa-solid fa-magnifying-glass pr-7 hover:cursor-pointer" onClick={searchArticles} />
+              <FontAwesomeIcon icon={faMagnifyingGlass} className="pr-7 hover:cursor-pointer" onClick={searchArticles} />
             </div>
           </div>
         </div>

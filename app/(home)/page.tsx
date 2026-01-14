@@ -15,6 +15,11 @@ import Section from "@/components/Section"
 import PhotoAndVideoSection from "@/components/PhotoAndVideoSection"
 import RowArticles from "@/components/RowArticles"
 import AccentTopic from "@/components/AccentTopic"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTelegram } from "@fortawesome/free-brands-svg-icons"
+import { faYoutube } from "@fortawesome/free-brands-svg-icons"
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons"
 
 import { feedArticlesParameters, popularArticlesParameters, topArticlesParameters, mArticle, editorsArticle } from "@/tools"
 
@@ -141,10 +146,10 @@ export default function Home() {
               <span className="px-5 md:px-0 font-bold">ПОДПИШИТЕСЬ:</span>
 
               <div className="px-5 md:px-0 flex items-center gap-1">
-                <i className="fa-brands fa-telegram text-3xl hover:cursor-pointer"></i>
-                <i className="fa-brands fa-youtube text-3xl hover:cursor-pointer"></i>
-                <i className="fa-brands fa-x-twitter text-3xl hover:cursor-pointer"></i>
-                <i className="fa-brands fa-facebook-f text-3xl hover:cursor-pointer"></i>
+                <FontAwesomeIcon icon={faTelegram} className="text-3xl hover:cursor-pointer" />
+                <FontAwesomeIcon icon={faYoutube} className="text-3xl hover:cursor-pointer" />
+                <FontAwesomeIcon icon={faXTwitter} className="text-3xl hover:cursor-pointer" />
+                <FontAwesomeIcon icon={faFacebookF} className="text-3xl hover:cursor-pointer" />
               </div>
             </div>
           </div>

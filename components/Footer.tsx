@@ -1,5 +1,12 @@
 import Link from "next/link"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTelegram } from "@fortawesome/free-brands-svg-icons"
+import { faYoutube } from "@fortawesome/free-brands-svg-icons"
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons"
+import { faInstagram } from "@fortawesome/free-brands-svg-icons"
+
 export default function Footer() {
   return (
     <div className="pt-5 px-3 md:px-0">
@@ -47,11 +54,11 @@ export default function Footer() {
           <span className="font-bold block md-3">Подписывайтесь на нас</span>
 
           <div className="flex items-center gap-1">
-            <i className="fa-brands fa-telegram text-2xl hover:cursor-pointer"></i>
-            <i className="fa-brands fa-youtube text-2xl hover:cursor-pointer"></i>
-            <i className="fa-brands fa-x-twitter text-2xl hover:cursor-pointer"></i>
-            <i className="fa-brands fa-facebook-f text-2xl hover:cursor-pointer"></i>
-            <i className="fa-brands fa-instagram text-2xl hover:cursor-pointer"></i>
+            <FontAwesomeIcon icon={faTelegram} className="text-2xl hover:cursor-pointer" />
+            <FontAwesomeIcon icon={faYoutube} className="text-2xl hover:cursor-pointer" />
+            <FontAwesomeIcon icon={faXTwitter} className="text-2xl hover:cursor-pointer" />
+            <FontAwesomeIcon icon={faFacebookF} className="text-2xl hover:cursor-pointer" />
+            <FontAwesomeIcon icon={faInstagram} className="text-2xl hover:cursor-pointer" />
           </div>
         </div>
 
